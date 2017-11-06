@@ -41,15 +41,7 @@ public class Dictionary {
         throw new NotFoundException(word);
     }
     public void remove(String word) throws NotFoundException{
-        rowFound=false;
-        for (String[] words : dictionary) {
-            if (words[0]!=null){
-                if (words[0].equals(word)) {
-                    rowFound = true;
-                }
-            }  
-        }
-        if (!rowFound) {
+        if (!contains(word)) {
             throw new NotFoundException(word);
         }
         String[][] result=new String[dictionary.length-1][dictionary[0].length];
