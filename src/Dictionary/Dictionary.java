@@ -11,7 +11,7 @@ public class Dictionary {
     public void add(String word1, String word2){
         dictionary[count][0]=word1;
         dictionary[count][1]=word2;
-        size=size+1;
+        size++;
         count++;
     }
     public boolean contains(String word){
