@@ -3,7 +3,6 @@ public class Dictionary {
     private int size;
     private int count=0;
     private boolean state;
-    private boolean rowFound;
     
     public Dictionary(){
         size=0;
@@ -12,7 +11,7 @@ public class Dictionary {
     public void add(String word1, String word2){
         dictionary[count][0]=word1;
         dictionary[count][1]=word2;
-        size=size+2;
+        size=size+1;
         count++;
     }
     public boolean contains(String word){
