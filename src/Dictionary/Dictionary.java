@@ -9,10 +9,11 @@ public class Dictionary {
         dictionary=new String[110][2];
     }
     public void add(String word1, String word2){
-        dictionary[count][0]=word1;
-        dictionary[count][1]=word2;
-        size++;
-        count++;
+            dictionary[count][0]=word1;
+            dictionary[count][1]=word2;
+            size++;
+            count++;
+        
     }
     public boolean contains(String word){
         state=false;
